@@ -60,6 +60,7 @@ mostrarTareas = () => {
             <li>
                 <span>${t.tarea}</span>
                 <input type="checkbox" ${t.estado ? 'checked' : ''} onclick="${t.estado ? 'descompletarTarea' : 'completarTarea'}(${t.id})"/>
+                <button onclick="eliminarTarea(${t.id})">Eliminar</button>
             </li>
         `
     })
