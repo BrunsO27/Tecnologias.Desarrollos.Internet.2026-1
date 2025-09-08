@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario Tarjeta de Crédito</title>
+    </head>
+    <body style="background-color: #FDF5E6">
+        <h1 style="text-align: center;">Ingrese los datos de su tarjeta</h1>
+         
+        <hr>
+        
+        <main>
+            <section>
+                <form action="controlador" method="POST">
+                    <label>
+                        Fecha: <input type="date" name="Fecha">
+                    </label>
+                    
+                    <br>
+                    
+                    <fieldset>
+                        <legend>Moneda:</legend>
+                        <label>
+                            <input type="radio" value="Dolares" name="Moneda"> Dólares (USD)
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" value="Pesos" name="Moneda"> Pesos (MXN)
+                        </label>
+                    </fieldset>
+                    
+                    <br>
+                    
+                    <label>
+                        Monto: <input type="number" name="Monto">
+                    </label>
+                    
+                    <label>
+                        Periodo: <input type="number" name="Periodo">
+                    </label>
+                    
+                    <label>
+                        Cuota: <input type="number" name="Cuota">
+                    </label>
+                    
+                    <br>
+                    
+                    <label>
+                        TEA: <input type="number" name="TEA"> %
+                    </label>
+                    
+                    <label>
+                        Fecha vencimiento: <input type="date" name="FechaVencimiento">
+                    </label>
+                    
+                    <br>
+                    
+                    <div>
+                        <input type="submit" value="Enviar Orden">
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

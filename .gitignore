@@ -1,5 +1,23 @@
-Ejemplos/
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+build/
+nbdist/
 
+# Maven
+target/
+
+# Logs y temporales
+*.log
+*.class
+*.war
+*.ear
+
+# Archivos de sistema (Mac/Windows/Linux)
 .DS_Store
+Thumbs.db
 
+# Ortos
 *.zip
+Ejemplos/
