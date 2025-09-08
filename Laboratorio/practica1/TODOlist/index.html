@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/index.css" />
+        <title>Document</title>
+    </head>
+    <body class="fondo">
+        <header>
+            <div class="encabezado">
+                <img src="images/logo.png" alt="logo TODO List" class="logo" />
+                <h1 class="titulo">TODO List</h1>
+            </div>
+        </header>
+
+        <hr class="linea_divisora" />
+
+        <main class="fondo2">
+            <div class="boton-barra">
+                <button onclick="ejemplificarToDo()">Eejmplo de lista</button>
+                <button onclick="eliminarLista()">Eliminar lista</button>
+                <button onclick="agregarTarea()">Agregar tarea</button>
+                <div class="textarea-group">
+                    <label for="ta1">Descripción </label>
+                    <textarea
+                        name="tarea"
+                        id="ta1"
+                        placeholder="Escribe la Descripción de tu tarea"></textarea>
+                </div>
+            </div>
+
+            <div class="cuadro-lista" mb-5>
+                <ul class="tareas" name="tareas" id="ulT1"></ul>
+            </div>
+        </main>
+
+        <hr class="linea_divisora" />
+
+        <footer class="fotterPag">
+            <div>
+                <p> Primera página para la practia 1 de TDI</p>
+                <p> Desarrollado por: Ortiz Amaya Bruno Fernando</p>
+            </div>
+        </footer>
+        <script src="js/listas.js"></script>
+    </body>
+</html>
